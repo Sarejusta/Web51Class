@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
-    <link rel="stylesheet" href="assets/styles/tablestyle.css">
+    <link rel="stylesheet" href="assets/styles/contactstyle.css">
 </head>
 <body>
-    <div id="ContactFormContainer">
-        <form action="mailto:audrey@adegart.com">
+    <div id="ContactFormContainer" class="container">
+        <form action="mailto:audrey@adegart.com" onsubmit="return validateForm();">
             
             <div>
                 <label for="fullName">Full Name:</label>
@@ -18,6 +18,7 @@
             <div>
                 <label for="nationality">Nationality:</label>
                 <select name="nationality" id="nationality">
+                    <option value="0">Select Nationality</option>
                     <option value="1">Maltese</option>
                     <option value="2">Italian</option>
                     <option value="3">English</option>
@@ -66,7 +67,11 @@
         </form>
     </div>
     <div id="ContactFormErrors">
+        <ul id="errorList">
+        </ul>
 
     </div>
+
+    <script src="assets/scripts/validation.js"></script>
 </body>
 </html>
