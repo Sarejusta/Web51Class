@@ -8,3 +8,12 @@ body{
     border: 5px;
     padding: 20px;
 }
+
+.errorText{
+    color: #ff0000;
+}
+
+.inputError{
+    color: #ff0000;
+    border: 1px #ff0000 solid;
+}
